@@ -1,0 +1,16 @@
+{
+  "assetRoot": "assets",
+  "totalSize": 377788,
+  "assets": {
+    "image": {
+      "avatar": {
+        "file": "avatar.png",
+        "size": 377788
+      },
+      "avatar2": {
+        "file": "avatar2.png",
+        "size": 377788
+      }
+    }
+  }
+}
