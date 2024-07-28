@@ -1,0 +1,106 @@
+{
+  "textures": [
+    {
+      "image": "walk",
+      "format": "RGBA8888",
+      "size": {
+        "w": 22,
+        "h": 33
+      },
+      "scale": 4,
+      "frames": [
+        {
+          "filename": "walk_1",
+          "frame": {
+            "x": 0,
+            "y": 33,
+            "w": 22,
+            "h": 33
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "filename": "walk_2",
+          "frame": {
+            "x": 22,
+            "y": 0,
+            "w": 22,
+            "h": 33
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "filename": "walk_3",
+          "frame": {
+            "x": 22,
+            "y": 33,
+            "w": 22,
+            "h": 33
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "filename": "walk_4",
+          "frame": {
+            "x": 44,
+            "y": 33,
+            "w": 22,
+            "h": 33
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "filename": "walk_5",
+          "frame": {
+            "x": 44,
+            "y": 0,
+            "w": 22,
+            "h": 33
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "filename": "walk_6",
+          "frame": {
+            "x": 66,
+            "y": 0,
+            "w": 22,
+            "h": 33
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "filename": "walk_7",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "w": 22,
+            "h": 33
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        }
+      ]
+    }
+  ]
+}
