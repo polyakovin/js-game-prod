@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"
+    />
+    <title>JS Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
-  <title>JS Game</title>
+    <style>
+      @font-face {
+        font-family: Tiny5;
+        src: url('assets/fonts/Tiny5-Regular.ttf');
+        font-weight: 400;
+        font-weight: normal;
+      }
 
-  <style>
-    @font-face {
-      font-family: Tiny5;
-      src: url('assets/fonts/Tiny5-Regular.ttf');
-      font-weight: 400;
-      font-weight: normal;
-    }
+      html,
+      body {
+        font-family: Tiny5;
+        margin: 0;
+        background: #333;
+      }
 
-    html,
-    body {
-      font-family: Tiny5;
-      margin: 0;
-      background: #333;
-    }
-  </style>
-</head>
+      textarea {
+        position: fixed;
+        left: 50px;
+        top: 50px;
+        width: 50%;
+        height: 90vh;
+        background-color: red;
+        z-index: 999;
+      }
+    </style>
+  </head>
 
-<body>
-  <div id="game-container"></div>
-  <script src="app.js"></script>
-</body>
+  <body>
+    <div id="game-container"></div>
 
+    <!-- <textarea class="language-js">
+const config: Phaser.Types.Core.GameConfig = {
+  title: 'Demo Game',
+  scene: [Boot, Preload, GameScene],
+  backgroundColor: '#000',
+  scale: {
+    mode: Phaser.Scale.FIT,
+    parent: 'game-container',
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+  },
+  pixelArt: true,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      // TODO
+      debug: window.location.hostname === 'localhost',
+    },
+  },
+};
+    </textarea> -->
+    <!-- <pre><code class="language-js">
+
+    </code></pre> -->
+
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="app.js"></script>
+  </body>
 </html>
