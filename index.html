@@ -61,9 +61,12 @@
       const editor = document.getElementById('editor');
       const editorDisplay = editor.childNodes[1];
       const editorEditor = editor.childNodes[3];
-      const codeExample = `function () {
-
-  return 0;
+      const codeExample = `function loginToMyComputerByPassword(password) {
+  if (password === '1234') {
+    return true;
+  } else {
+    return false;
+  }
 }`;
       editorEditor.innerText = codeExample;
 
