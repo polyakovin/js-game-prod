@@ -10,7 +10,7 @@
     <title>JS Game</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-dark.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
@@ -29,14 +29,22 @@
         background: #333;
       }
 
-      textarea {
+      pre {
         position: fixed;
         left: 50px;
         top: 50px;
         width: 50%;
         height: 90vh;
-        background-color: red;
+        color: white;
+        background-color: #1c1b1b;
+        box-sizing: border-box;
         z-index: 999;
+        padding: 20px;
+      }
+      pre:last-child {
+        color: transparent;
+        background-color: transparent;
+        caret-color: white;
       }
     </style>
   </head>
@@ -44,32 +52,30 @@
   <body>
     <div id="game-container"></div>
 
-    <!-- <textarea class="language-js">
-const config: Phaser.Types.Core.GameConfig = {
-  title: 'Demo Game',
-  scene: [Boot, Preload, GameScene],
-  backgroundColor: '#000',
-  scale: {
-    mode: Phaser.Scale.FIT,
-    parent: 'game-container',
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-  },
-  pixelArt: true,
-  physics: {
-    default: 'arcade',
-    arcade: {
-      // TODO
-      debug: window.location.hostname === 'localhost',
-    },
-  },
-};
-    </textarea> -->
-    <!-- <pre><code class="language-js">
-
-    </code></pre> -->
+    <div id="editor">
+      <pre class="display"></pre>
+      <pre contenteditable="true"></pre>
+    </div>
 
     <script>
-      hljs.highlightAll();
+      const editor = document.getElementById('editor');
+      const editorDisplay = editor.childNodes[1];
+      const editorEditor = editor.childNodes[3];
+      const codeExample = `function () {
+
+  return 0;
+}`;
+      editorEditor.innerText = codeExample;
+
+      const highilghtCode = () => {
+        const code = editorEditor.innerText;
+        const result = hljs.highlight(code, { language: 'js' });
+        editorDisplay.innerHTML = result.value;
+      };
+      highilghtCode();
+
+      editorEditor.addEventListener('input', highilghtCode, false);
+      editor.style.display = 'none';
     </script>
     <script src="app.js"></script>
   </body>
