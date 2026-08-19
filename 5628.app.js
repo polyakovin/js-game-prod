@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjs_game=self.webpackChunkjs_game||[]).push([[5628],{45628:(e,s,a)=>{a.r(s)}}]);
