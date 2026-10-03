@@ -1,0 +1,32 @@
+{
+  "dashboard": {
+    "description": "Отдельный Git-репозиторий опубликованной сборки JS Game.",
+    "goal": "Доставлять собранную образовательную игру; продуктовые изменения принадлежат исходному репозиторию js-game.",
+    "platform": "Статические HTML/CSS/JavaScript и игровые assets; GitHub Pages",
+    "updated_at": "2026-10-04",
+    "stage": "Репозиторий сборки.",
+    "highlights": [
+      "Связан с сюжетной игрой об основах JavaScript.",
+      "Исходники и продуктовый контекст находятся в родительском js-game."
+    ],
+    "constraints": [
+      "Сгенерированные игровые файлы не редактируются вручную."
+    ],
+    "links": [
+      {
+        "label": "Игра",
+        "url": "https://polyakovin.github.io/js-game-prod"
+      },
+      {
+        "label": "Исходный код",
+        "url": "https://github.com/polyakovin/js-game"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Документ проекта",
+        "path": "../README.md"
+      }
+    ]
+  }
+}
